@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fff7fa,#fefcff,#f7fbff);
+    color:#555;
+    min-height:100vh;
+    overflow-x:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Background */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background:
+    radial-gradient(circle at top left,#ffdce8 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#dfefff 0%,transparent 35%);
+    filter:blur(55px);
+}
+
+/* Home */
+
+#home{
+    width:90%;
+    max-width:950px;
+    text-align:center;
+    animation:fade .8s ease;
+}
+
+#home h1{
+    font-family:'Parisienne',cursive;
+    font-size:64px;
+    color:#ff7fa8;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#777;
+    margin-bottom:40px;
+    font-size:16px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.letter-btn{
+    border:none;
+    padding:18px;
+    border-radius:20px;
+    cursor:pointer;
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(15px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+    transition:.3s;
+    font-size:15px;
+}
+
+.letter-btn:hover{
+    transform:translateY(-6px);
+    background:white;
+}
+
+.final-btn{
+    background:#ffd9e8;
+}
+
+/* Letter */
+
+.hidden{
+    display:none;
+}
+
+#letterPage{
+    width:90%;
+    max-width:850px;
+    animation:fade .5s ease;
+}
+
+#backBtn{
+    border:none;
+    padding:12px 22px;
+    border-radius:50px;
+    cursor:pointer;
+    background:white;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+#backBtn:hover{
+    transform:translateY(-3px);
+}
+
+.letter-card{
+    background:rgba(255,255,255,.6);
+    backdrop-filter:blur(18px);
+    border-radius:28px;
+    padding:40px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+#letterTitle{
+    font-size:35px;
+    color:#ff79a8;
+    margin-bottom:25px;
+}
+
+#letterText{
+    line-height:2;
+    color:#555;
+    font-size:16px;
+}
+
+#letterText p{
+    margin-bottom:18px;
+}
+
+/* Animation */
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+#home h1{
+    font-size:48px;
+}
+
+.letter-card{
+    padding:28px;
+}
+
+#letterTitle{
+    font-size:28px;
+}
+
+}

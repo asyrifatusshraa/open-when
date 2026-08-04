@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open When You Need It 🤍</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music/song.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- HOME -->
+    <section id="home">
+
+        <h1>Open When You Need It</h1>
+
+        <p class="subtitle">
+            Every feeling deserves a place to rest.
+        </p>
+
+        <div class="grid">
+
+            <button class="letter-btn" data-letter="happy">😊 Happy</button>
+
+            <button class="letter-btn" data-letter="sad">☁️ Sad</button>
+
+            <button class="letter-btn" data-letter="overthinking">🌙 Overthinking</button>
+
+            <button class="letter-btn" data-letter="tired">💤 Tired</button>
+
+            <button class="letter-btn" data-letter="lonely">🤍 Lonely</button>
+
+            <button class="letter-btn" data-letter="hug">🫂 Need A Hug</button>
+
+            <button class="letter-btn" data-letter="miss">💌 Miss Me</button>
+
+            <button class="letter-btn" data-letter="proud">🌷 Proud Of Yourself</button>
+
+            <button class="letter-btn final-btn" data-letter="final">
+                💖 Final Letter
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- LETTER PAGE -->
+    <section id="letterPage" class="hidden">
+
+        <button id="backBtn">
+            ← Back
+        </button>
+
+        <div class="letter-card">
+
+            <h2 id="letterTitle"></h2>
+
+            <div id="letterText"></div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
